@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('andrew-kliatskyi-0gTTqEaAW3g-unsplash.jpg');
+	font-family: Montserrat;
+}
+
+#logo {
+	height: 400px;
+	width: 500px;
+}
+
+.landing-page-nav {
+	list-style-type: none;
+	color: #ffffff;
+	font-size: 46px;
+	font-weight: 200;
+}
+
+#laptop-image {
+	width: 100%;
+	height: auto;
+}
