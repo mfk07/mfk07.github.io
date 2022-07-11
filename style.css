@@ -7,19 +7,46 @@ body {
 	font-family: Montserrat;
 }
 
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover{
+	
+}
+
 #logo {
 	height: 400px;
 	width: 500px;
 }
 
 .landing-page-nav {
-	list-style-type: none;
 	color: #ffffff;
 	font-size: 46px;
 	font-weight: 200;
+	flex: 0 0 50%;
+}
+
+.landing-page-nav li {
+	list-style-type: none;
+	padding: 0 0 0 65px;
 }
 
 #laptop-image {
-	width: 100%;
-	height: auto;
+	flex: 0 0 50%;
+	border: solid thin;
+	color: #ffffff;
+}
+
+#laptop-image img {
+		width: 100%;
+		height: auto;
+		padding: 150px 0 0 0;
+}
+
+.landing-page {
+	display: flex;
+	max-width: 1440px;
+	margin: 100px auto;
 }
