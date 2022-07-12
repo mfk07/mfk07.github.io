@@ -101,10 +101,11 @@ aside {
 }
 
 #CV-button {
-	background-color: transparent;
+	background-color: rgba(255, 255, 255, 0.3);
 	color: #ffffff;
 	border-style: solid thin;
 	border-color: #ffffff;
+	font-size: 16px;
 }
 
 #about-image {
@@ -131,19 +132,38 @@ aside {
 	font-size: 20px;
 }
 
-@media only screen and (max-width: 768px){
-	.landing-page {
-		max-width: 768px;
-		display: flex;
-	 	flex-direction: column;
-	}
-}
 
 h3 {
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
+.hamburger-menu {
+	display: none;
+}
+
+@media only screen and (max-width: 1000px){
+	.about-body {
+		max-width: 768px;
+		display: flex;
+	 	flex-direction: column;
+		padding: 20px;
+	}
+	#menu {
+		padding: 5px;
+	}
+	#menu li {
+		display: none;
+	}
+	#menu-title {
+		display: none;
+	}
+	.hamburger-menu {
+		display: flex;
+		padding: 50px 0 0 75px;
+	}
+	
+}
 
 
 
