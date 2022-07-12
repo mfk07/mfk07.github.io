@@ -7,6 +7,7 @@ body {
 	display: flex;
 	background-image: url('repeat-image.jpg');
 	font-family: Montserrat;
+	margin: 0;
 }
 
 a {
@@ -15,7 +16,7 @@ a {
 }
 
 a:hover{
-	
+	text-decoration: underline;
 }
 
 
@@ -77,12 +78,18 @@ aside {
 	width: 33%;
 }
 
+.about-body {
+	background-image: url('background-image.jpg');
+}
+
 #menu {
 	background-color: #000000;
-	padding: 400px 0 0 0;
+	padding: 250px 0 0 40px;
 	flex: 0 0 40%;
  	flex-direction: column;
 	height: 100%;
+	font-size: 40px;
+	font-weight: 200;
 }
 
 .main-content {
@@ -90,6 +97,7 @@ aside {
 	flex: 0 0 60%;
 	flex-direction: column;
 	padding: 75px;
+	text-align: justify;
 }
 
 #CV-button {
@@ -104,8 +112,37 @@ aside {
 	height: auto;
 }
 
+#menu li {
+	list-style-type: none;
+	padding: 0 0 0 35px;
+}
 
+#menu-title {
+	text-align: center;
+	font-size: 60px;
+	font-weight: normal;
+}
 
+.page-heading {
+	font-size: 44px;
+}
+
+.about-copy {
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 768px){
+	.landing-page {
+		max-width: 768px;
+		display: flex;
+	 	flex-direction: column;
+	}
+}
+
+h3 {
+	font-weight: 400;
+	text-transform: uppercase;
+}
 
 
 
