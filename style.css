@@ -248,7 +248,24 @@ h3 {
 }
 
 
-
+/*PORTFOLIO PAGE STYLING*/
+#portfolio-image {
+	width: 100%;
+	height:auto;
+	max-height:700px;
+}
+	
+/*PORTFOLIO PAGE STYLING*/
+.portfolio-items {
+	display: flex;
+}
+	
+.portfolio {
+	width: 200px;
+	height:auto;
+	display: flex;
+	flex: wrap;
+}
 
 
 
