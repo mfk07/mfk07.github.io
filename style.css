@@ -90,6 +90,7 @@ a:hover{
 	color: #ffffff;
 	flex: 0 0 25%;
 	height:100%;
+	display: fixed;
 }
 
 .about-body {
@@ -215,6 +216,35 @@ h3 {
 #contact-image {
 	width: 100%;
 	height: auto;
+}
+
+@media only screen and (max-width: 1000px){
+	.about-body {
+		max-width: 768px;
+	 	flex-direction: column;
+		padding: 20px;
+	}
+	#menu {
+		padding: 5px;
+	}
+	#menu li {
+		display: none;
+	}
+	#menu-title {
+		display: none;
+	}
+	.hamburger-menu {
+		display: flex;
+		text-align: flex-end;
+		padding: 25px 0 0 5px;
+	}
+	.main-content {
+		padding: 5px;
+	}
+	.about {
+		display: none;
+	}
+	
 }
 
 
