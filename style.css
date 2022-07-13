@@ -2,12 +2,16 @@
 * {
 	box-sizing: border-box;
 }
-
+html {
+	height:100%;
+}
 body {
 	display: flex;
+	flex-flow: row nowrap;
 	background-image: url('repeat-image.jpg');
-	font-family: Montserrat;
+	font-family: Montserrat, sans-serif;
 	margin: 0;
+	height:100%;
 }
 
 a {
@@ -31,7 +35,7 @@ a:hover{
 	font-size: 46px;
 	font-weight: 200;
 	flex: 0 0 50%;
-	padding: 100px 0 0 0;
+	padding: 100px 0 0 100;
 }
 
 .landing-page-nav li {
@@ -46,7 +50,7 @@ a:hover{
 #laptop-image img {
 		width: 100%;
 		height: auto;
-		padding: 150px 0 0 0;
+		padding: 175px 50px 0 0;
 }
 
 .landing-page {
@@ -55,12 +59,15 @@ a:hover{
 	margin: 100px auto;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1000px){
 	.landing-page {
-		max-width: 768px;
+		max-width: 1000px;
 		display: flex;
 	 	flex-direction: column;
 	}
+	#laptop-image img {
+			padding: 75px 0 0 0;
+		}
 }
 	
 @media only screen and (max-width: 576px){
@@ -68,14 +75,22 @@ a:hover{
 		max-width: 576px;
 		display: flex;
 	 	flex-direction: column;
+ }		
+ 	.landing-page-nav {
+		padding: 50px;
  } 
+	#laptop-image img {
+			padding: 20px 0 0 0;
+		}
 }
 
 
 /*ABOUT PAGE STYLING*/ 
-aside {
+.about {
 	color: #ffffff;
-	width: 33%;
+	flex: 0 0 25%;
+	height:100%;
+	display: fixed;
 }
 
 .about-body {
@@ -94,10 +109,9 @@ aside {
 
 .main-content {
 	color: #ffffff;
-	flex: 0 0 60%;
-	flex-direction: column;
 	padding: 75px;
 	text-align: justify;
+	height:100%;
 }
 
 #CV-button {
@@ -110,7 +124,8 @@ aside {
 
 #about-image {
 	width: 100%;
-	height: auto;
+	height:auto;
+	max-height:700px;
 }
 
 #menu li {
@@ -122,6 +137,7 @@ aside {
 	text-align: center;
 	font-size: 60px;
 	font-weight: normal;
+	color: #ffffff;
 }
 
 .page-heading {
@@ -145,7 +161,6 @@ h3 {
 @media only screen and (max-width: 1000px){
 	.about-body {
 		max-width: 768px;
-		display: flex;
 	 	flex-direction: column;
 		padding: 20px;
 	}
@@ -160,10 +175,103 @@ h3 {
 	}
 	.hamburger-menu {
 		display: flex;
-		padding: 50px 0 0 75px;
+		text-align: flex-end;
+		padding: 25px 0 0 5px;
+	}
+	.main-content {
+		padding: 5px;
 	}
 	
 }
+
+/*CONTACT PAGE STYLING*/ 
+.contact-form {
+	width: 100%;
+	height: auto;
+}
+
+#name {
+	border: 2px solid #ffffff;
+	font-size: 25px;
+	width: 100%;
+}
+
+#email {
+	border: 2px solid #ffffff;
+	font-size: 25px;
+	width: 100%;
+}
+
+#message {
+	border: 2px solid #ffffff;
+	height: 250px;
+	width: 100%;
+	font-size: 25px;
+}
+
+#submit {
+	font-size: 25px;
+}
+
+#contact-image {
+	width: 100%;
+	height: auto;
+}
+
+@media only screen and (max-width: 1000px){
+	.about-body {
+		max-width: 768px;
+	 	flex-direction: column;
+		padding: 20px;
+	}
+	#menu {
+		padding: 5px;
+	}
+	#menu li {
+		display: none;
+	}
+	#menu-title {
+		display: none;
+	}
+	.hamburger-menu {
+		display: flex;
+		text-align: flex-end;
+		padding: 25px 0 0 5px;
+	}
+	.main-content {
+		padding: 5px;
+	}
+	.about {
+		display: none;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
