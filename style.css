@@ -23,7 +23,7 @@ a:hover{
 }
 
 /*LANDING PAGE STYLING*/ 
-#logo {
+.landing-page-nav img {
 	height: 400px;
 	width: 500px;
 }
@@ -33,7 +33,7 @@ a:hover{
 	font-size: 46px;
 	font-weight: 200;
 	flex: 0 0 50%;
-	padding: 100px 0 0 100;
+	padding: 100px 0 0 100px;
 }
 
 .landing-page-nav li {
@@ -67,7 +67,7 @@ a:hover{
 			padding: 75px 0 0 0;
 		}
 	 .landing-page-nav {
-			padding: 50px 0 0 20;
+			padding: 50px 0 0 20px;
 		}
 }
 	
@@ -81,7 +81,7 @@ a:hover{
 		padding: 50px 0 0 0;
  } 
 	#laptop-image img {
-			padding: 20px 0 0 20;
+			padding: 20px 0 0 20px;
 		}
 }
 
@@ -89,7 +89,6 @@ a:hover{
 .about {
 	color: #ffffff;
 	flex: 0 0 25%;
-	display: fixed;
 }
 
 .about-body {
@@ -116,7 +115,7 @@ a:hover{
 #CV-button {
 	background-color: rgba(255, 255, 255, 0.3);
 	color: #ffffff;
-	border-style: solid thin;
+	border-style: solid;
 	border-color: #ffffff;
 	font-size: 16px;
 }
@@ -153,7 +152,7 @@ h3 {
 	text-transform: uppercase;
 }
 
-.hamburger-menu {
+.burger-menu {
 	display: none;
 }
 
@@ -171,12 +170,12 @@ h3 {
 	#menu-title {
 		display: none;
 	}
-	.hamburger-menu {
+	.burger-menu {
 		/*padding: 25px 0 0 5px;*/
 		height: 70px;
 	}
 	
-	.hamburger-menu img {
+	.burger-menu img {
 		width: 80px;
 	}
 	
@@ -187,32 +186,25 @@ h3 {
 }
 
 /*CONTACT PAGE STYLING*/ 
-.contact-form {
-	width: 100%;
-	height: auto;
+.contact-links {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-around;
+	padding: 50px;
 }
 
-#name {
-	border: 2px solid #ffffff;
-	font-size: 25px;
-	width: 100%;
+.links img{
+	background-color: #ffffff;
+	flex-flow: row wrap;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	flex: 25%;
 }
 
-#email {
-	border: 2px solid #ffffff;
-	font-size: 25px;
-	width: 100%;
-}
-
-#message {
-	border: 2px solid #ffffff;
-	height: 250px;
-	width: 100%;
-	font-size: 25px;
-}
-
-#submit {
-	font-size: 25px;
+#email img{
+	padding: 25px;
 }
 
 #contact-image {
@@ -234,10 +226,13 @@ h3 {
 	#menu-title {
 		display: none;
 	}
-	.hamburger-menu {
+	.burger-menu {
 		display: flex;
-		text-align: flex-end;
-		/*padding: 25px 0 0 5px;*/
+	}
+	
+	.burger-menu img {
+		background-color: #ffffff;
+		border-radius: 50%;
 	}
 	.main-content {
 		padding: 5px;
@@ -284,6 +279,7 @@ h3 {
 	font-size: 18px;
 	position: relative;
 	bottom: 27px;
+	font-weight: 200;
 
 }
 
