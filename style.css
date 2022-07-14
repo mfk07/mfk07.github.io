@@ -11,7 +11,6 @@ body {
 	background-image: url('repeat-image.jpg');
 	font-family: Montserrat, sans-serif;
 	margin: 0;
-	height:100%;
 }
 
 a {
@@ -22,7 +21,6 @@ a {
 a:hover{
 	text-decoration: underline;
 }
-
 
 /*LANDING PAGE STYLING*/ 
 #logo {
@@ -87,12 +85,10 @@ a:hover{
 		}
 }
 
-
 /*ABOUT PAGE STYLING*/ 
 .about {
 	color: #ffffff;
 	flex: 0 0 25%;
-	height:100%;
 	display: fixed;
 }
 
@@ -163,7 +159,6 @@ h3 {
 
 @media only screen and (max-width: 1000px){
 	.about-body {
-		max-width: 768px;
 	 	flex-direction: column;
 		padding: 20px;
 	}
@@ -177,10 +172,14 @@ h3 {
 		display: none;
 	}
 	.hamburger-menu {
-		display: flex;
-		text-align: flex-end;
-		padding: 25px 0 0 5px;
+		/*padding: 25px 0 0 5px;*/
+		height: 70px;
 	}
+	
+	.hamburger-menu img {
+		width: 80px;
+	}
+	
 	.main-content {
 		padding: 5px;
 	}
@@ -223,7 +222,6 @@ h3 {
 
 @media only screen and (max-width: 1000px){
 	.about-body {
-		max-width: 768px;
 	 	flex-direction: column;
 		padding: 20px;
 	}
@@ -239,7 +237,7 @@ h3 {
 	.hamburger-menu {
 		display: flex;
 		text-align: flex-end;
-		padding: 25px 0 0 5px;
+		/*padding: 25px 0 0 5px;*/
 	}
 	.main-content {
 		padding: 5px;
@@ -249,7 +247,6 @@ h3 {
 	}
 	
 }
-
 
 /*PORTFOLIO PAGE STYLING*/
 #portfolio-image {
@@ -311,35 +308,3 @@ h3 {
 			padding: 20px 0 0 0;
 		}
 }
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
