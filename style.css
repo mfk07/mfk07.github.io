@@ -68,6 +68,9 @@ a:hover{
 	#laptop-image img {
 			padding: 75px 0 0 0;
 		}
+	 .landing-page-nav {
+			padding: 50px 0 0 20;
+		}
 }
 	
 @media only screen and (max-width: 576px){
@@ -77,10 +80,10 @@ a:hover{
 	 	flex-direction: column;
  }		
  	.landing-page-nav {
-		padding: 50px;
+		padding: 50px 0 0 0;
  } 
 	#laptop-image img {
-			padding: 20px 0 0 0;
+			padding: 20px 0 0 20;
 		}
 }
 
@@ -258,19 +261,57 @@ h3 {
 /*PORTFOLIO PAGE STYLING*/
 .portfolio-items {
 	display: flex;
+	flex-wrap: wrap;
+	color: white;
+	justify-content: space-around;
 }
 	
-.portfolio {
-	width: 200px;
-	height:auto;
+.projects {
 	display: flex;
-	flex: wrap;
+	flex-flow: column wrap;
+	align-items: center;
+	flex: 33%;
 }
 
+.portfolio-placeholder {
+	height: 200px;
+	width: 200px;
+	border-radius: 33%;
+}
 
+.project-description {
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	font-size: 18px;
+	position: relative;
+	bottom: 27px;
 
+}
 
-
+@media only screen and (max-width: 768px){
+	.landing-page {
+		max-width: 768px;
+		display: flex;
+	 	flex-direction: column;
+	}
+	#laptop-image img {
+			padding: 75px 0 0 0;
+		}
+}
+	
+@media only screen and (max-width: 576px){
+	.portfolio-items {
+		max-width: 576px;
+		display: flex;
+	 	flex-direction: column;
+ } 
+	.portfolio-placeholder img {
+			padding: 20px 0 0 0;
+		}
+}
+	
 
 
 
